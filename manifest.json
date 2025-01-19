@@ -1,0 +1,24 @@
+{
+	"name": "CSS injector",
+	"description": "An extention used to inject custom CSS to customise web pages",
+	"version": "1.0",
+	"manifest_version": 3,
+	"action": {
+		"default_popup": "index.html"
+	},
+	"content_scripts": [
+		{
+			"js": ["lib/js/content.js"],
+			"matches": [
+				"https://developer.chrome.com/docs/extensions/*",
+				"https://developer.chrome.com/docs/webstore/*"
+			]
+		}
+	],
+	"icons": {
+		"16": "icon/system/icon-16.png",
+		"32": "icon/system/icon-32.png",
+		"48": "icon/system/icon-48.png",
+		"128": "icon/system/icon-128.png"
+	}
+}
